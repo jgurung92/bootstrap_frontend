@@ -1,0 +1,19 @@
+/* To make the whole body just below the fixed navigation bar */
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+/* Map id */
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* To make the input area half on large screen */
+@media(min-width: 768px) {
+    .forms-input {
+        width: 50%;
+    }
+}

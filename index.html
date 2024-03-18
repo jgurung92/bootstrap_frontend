@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>FastTech Academy</title>
+
+    <!-- bootstrap icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Mapbox stylesheet CDN -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    
+    <!-- custome stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <!-- NAVIGATION SECTION START -->
+    <!-- creating navigating bar (navmenu)-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class ="navbar-brand">FastTech</a>
+ 
+            <!-- creating a navmenu icon with the toggle feature -->
+           
+            <button class="navbar-toggler" 
+            type = "button" 
+            data-bs-toggle = "collapse" 
+            data-bs-target = "#navmenu">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+       
+            <!-- navbar collapse on small screen (change into navigation bar)-->
+            <div class="collapse navbar-collapse" id = "navmenu">
+                <ul class = "navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What you'll Learn</a>
+                    </li>  
+                    
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </nav>
+    <!-- NAVIGATION SECTION END -->
+
+
+    <!-- SHOWCASE SECTION START -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class ="d-sm-flex align-item-center justify-content-between">
+                <div>
+                    <h1>Become a <span class="text-warning">Web Developer</span></h1>
+                    <p class=" my-4">
+                        Empowering Aspiring Developers to Master the Web: Where 
+                        Innovation Meets Education for a Brighter Digital Tomorrow.
+                    </p>
+
+                    <!-- Enrollment button when clicked go to the form -->
+                    <button 
+                        class="btn btn-primary btn-lg" 
+                        data-bs-toggle="modal"
+                        data-bs-target="#enroll"
+                        >
+                        Start The Enrollment
+                    </button>
+                </div>
+                <image class = "img-fluid w-50 d-none d-sm-block" src = "css/images/developer.svg" alt=""/>
+            </div>
+        </div>
+    </section>
+    <!-- SHOWCASE SECTION END -->
+   
+    <!-- NEWSLETTER SECTION (INPUT, SEARCH BOX) START-->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Sign Up Today</h3>
+
+                <!-- input group -->
+                <!-- Uses bootstrap FORM/INPUT GROPUP/BUTTON ADDONS -->
+                <div class="input-group forms-input">
+
+                    <!-- User Text input box -->
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Enter your Email address" >
+
+                    <!-- button -->
+                    <button class="btn btn-dark btn-lg" 
+                    type="button">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NEWSLETTER SECTION (INPUT, SEARCH BOX) END -->
+
+    <!-- BOXES SECTION START (USING BOOTSTRAP GRID) -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text- center g-4">
+
+                <!-- First Box -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <!-- The laptop icon was taken from bootstrap icons -->
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Online</h3>
+                            <p class="card-text">
+                                welcome to FastTech online Academy.
+                            </p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Box -->
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <!-- The person-square icon was taken from bootstrap icons -->
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Hybrid</h3>
+                            <p class="card-text">
+                                Experience our flexible Hybrid option.
+                            </p>
+                            <a href="#" class="btn btn-dark">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Box -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <!-- The people icon was taken from bootstrap icons -->
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="card-title mb-3">In Person</h3>
+                            <p class="card-text">
+                                In our fully equipped campus, we offer in-person classes.
+                            </p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BOXES SECTION END -->
+
+    <!-- LEARN SECTION START -->
+    <!-- First Learn Section -->
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                   <img src="/css/images/fundamentals.svg" class="img-fluid" alt=""> 
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn The Funddamentals</h2>
+                    <p class="lead">
+                        Mastering the fundamentals of web development lays the essential 
+                        groundwork for success in the field. These core principles provide 
+                        a solid understanding of key concepts such as HTML, CSS, and JavaScript, 
+                        forming the backbone of every website and web application. 
+                    </p>
+                    <p class="lead">
+                        Moreover, a strong foundation in web development fundamentals empowers 
+                        learners to confidently tackle more advanced concepts, ensuring they 
+                        remain adaptable and competitive in the ever-changing digital landscape.
+                    </p>
+                    <a href="#" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right"></i>Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secnod Learn Section -->
+    <section id="learn" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Learn react</h2>
+                    <p class="lead">
+                        Learning JavaScript frameworks like Angular and React Js library opens doors to 
+                        creating dynamic, interactive web applications efficiently. These 
+                        frameworks streamline development by providing pre-built components, 
+                        enhancing productivity and reducing code complexity. 
+                    </p>
+                    <p class="lead">
+                        Additionally, they facilitate the creation of single-page applications 
+                        that deliver seamless user experiences, improving engagement and satisfaction. 
+                    </p>
+                    <a href="#" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right"></i>Read More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="/css/images/javascript.svg" class="img-fluid" alt=""> 
+                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- LEARN SECTION END -->
+
+    <!-- QUESTIONS SECTION START (Uses bootstrap Accordion) -->
+    <section id="Questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Frequently Asked Questions
+            </h2>
+
+            <!-- Used from bootstrap/components/accordion/flush -->
+            <div class="accordion accordion-flush" id="questions">
+                
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    
+                    <button 
+                    class="accordion-button collapsed" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#questions-one" 
+                    >
+                      Where exactly are you located?
+                    </button>
+                  </h2>
+                  <div id="questions-one" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            We are located in Pittsburgh, Pennsylvania.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      
+                      <button 
+                      class="accordion-button collapsed" 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#questions-two" 
+                      >
+                        How much does it cost to attend?
+                      </button>
+                    </h2>
+                    <div id="questions-two" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            Online Classes: Our online course offers flexibility and convenience, 
+                            priced at $3000 for the full program.
+
+                            Hybrid Classes: Experience the best of both worlds with our hybrid option, 
+                            blending online and in-person learning. The cost for the full hybrid program is $6000.
+
+                            In-Person Classes: Immerse yourself in a dynamic learning environment on 
+                            our fully equipped campus. The full in-person course is priced at $9000.
+                          </div>
+                      </div>
+                  </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      
+                      <button 
+                      class="accordion-button collapsed" 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#questions-three" 
+                      >
+                        What technologies should I know?
+                      </button>
+                    </h2>
+                    <div id="questions-three" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                              I am located in Pittsburgh, Pennsylvania.
+                          </div>
+                      </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      
+                      <button 
+                      class="accordion-button collapsed" 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#questions-four" 
+                      >
+                        How do I sign up?
+                      </button>
+                    </h2>
+                    <div id="questions-four" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                              I am located in Pittsburgh, Pennsylvania.
+                          </div>
+                      </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      
+                      <button 
+                      class="accordion-button collapsed" 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#questions-five" 
+                      >
+                        Will you help me find the Job?
+                      </button>
+                    </h2>
+                    <div id="questions-five" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                              I am located in Pittsburgh, Pennsylvania.
+                          </div>
+                      </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTRUCTORS SECTION (using bootstrap cards again) -->
+    <section id="instructors" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">Our Instructors</h2>
+            <p class="lead text-center text-white mb-5">
+                Our Instructors all have 5+ years of working as 
+                a web developer in the Industry
+            </p>
+            <div class="row g-4">
+
+                <!-- Box 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg"class = "rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Jhon Doe</h3>
+                            <p class="-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing 
+                                elit. Perferendis pariatur cupiditate deleniti aut 
+                                provident quos.
+                            </p>
+                            <a href="#"> <i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"> <i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"> <i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"> <i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/11.jpg"class = "rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Amanda Rice</h3>
+                            <p class-text="card">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing 
+                                elit. Perferendis pariatur cupiditate deleniti aut 
+                                provident quos.
+                            </p>
+                            <a href="#"> <i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"> <i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"> <i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"> <i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/15.jpg"class = "rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Matt Arena</h3>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing 
+                                elit. Perferendis pariatur cupiditate deleniti aut 
+                                provident quos.
+                            </p>
+                            <a href="#"> <i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"> <i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"> <i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"> <i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/15.jpg"class = "rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Julie Karen</h3>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing 
+                                elit. Perferendis pariatur cupiditate deleniti aut 
+                                provident quos.
+                            </p>
+                            <a href="#"> <i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"> <i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"> <i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"> <i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- INSTRUCTORS SECTION END -->
+
+    <!-- CONTACT & MAP SECTION START-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span>
+                            325 Grant st, Pittsburgh PA
+                        </li>
+
+                        <li class="list-group-item">
+                            <span class="fw-bold">Stdent Phone:</span>
+                            (423)-405-3443
+                        </li>
+
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Email:</span>
+                            enroll@frontend.test
+                        </li>
+
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Email:</span>
+                            student@frontend.test
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT & MAP SECTION END -->
+
+    <!-- FOOTER SECTION START -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 jitengurug</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- MODAL SECTION START -->
+    <!-- Modal Taken from Bootstrap/Components/Modal/LiveModel HTML -->
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" 
+            aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="enrollLabel">Enrollment Form</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="lead">Fill out this form and we will get back to you</p>
+              
+              <!-- creating Form  -->
+                <form>
+                    <div class="mb-3">
+                        <label for="first-name" class="col-form-label">
+                            First Name:
+                        </label>
+                        <input type="text" class="form-control" id="first-name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="last-name" class="col-form-label">
+                            Last Name:
+                        </label>
+                        <input type="text" class="form-control" id="last-name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">
+                            Email:
+                        </label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="col-form-label">
+                            Phone:
+                        </label>
+                        <input type="tel" class="form-control" id="phone">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap Js bundle CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    
+    <!-- Mapbox Js CDN -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+
+    <!-- Custom js for map -->
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoiamd1cnVuZyIsImEiOiJjbHRreGRuYjAxNDIyMmtyaDJidTE1NGdnIn0.whXVoVYdZXwkxQuGiN2iJg';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-79.995888, 40.440624],
+            zoom: 18,
+        });
+    </script>
+</body>
+</html>
